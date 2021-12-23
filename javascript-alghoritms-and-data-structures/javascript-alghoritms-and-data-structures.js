@@ -1,3 +1,4 @@
+// Palindrome Checker
 function palindrome(str) {
   // Filter by a-zA-Z0-9 and assign it to arr
   let arr = str.toLowerCase().match(/[a-zA-Z0-9]/gi)
