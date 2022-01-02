@@ -44,3 +44,19 @@ function convertToRoman(num) {
 }
 
 convertToRoman(2014);
+
+// Caesars Cipher
+
+function rot13(str) {
+  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  let split = str.split(""), result = "";
+  split.map(function(letter) {
+    if(alphabet.indexOf(letter) < 0) { result += letter }
+    else {
+      result += alphabet[(alphabet.indexOf(letter) + 13) % 26]
+    }
+  })
+  return result;
+}
+
+rot13("SERR PBQR PNZC");
