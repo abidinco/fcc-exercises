@@ -70,6 +70,25 @@ function findElement(arr, func) {
 
 findElement([1, 3, 5, 8, 9, 10], num => num % 2 === 0);
 
+// Title Case a Sentence
+function titleCase(str) {
+  let arr = str.split(" ")
+  let result = arr.map((word) => word[0].toUpperCase() + word.toLowerCase().slice(1,))
+  return result.join(" ")
+}
+
+titleCase("I'm a little tea pot");
+
+// Falsy Bouncer
+function bouncer(arr) {
+  return arr.filter((item) => (Boolean(item)))
+}
+
+bouncer([7, "ate", "", false, 9]);
+
+// Where do I Belong
+// Skipped
+
 // Chunky Monkey
 function chunkArrayInGroups(arr, size) {
   let returnArr = [];
